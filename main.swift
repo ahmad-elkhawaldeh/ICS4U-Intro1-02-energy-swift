@@ -8,7 +8,6 @@
 //                         
 //  This program calculates the amount of energy
 //
-
 import Foundation
 
 // https://stackoverflow.com/questions/60788627/custom-errormessage-on-enum-field-upon-failed-validation-in-spring
@@ -34,8 +33,7 @@ do {
     let lightSpeed = (POW4 * pow(POW2, POW3))
     let energy = pow(lightSpeed, POW1)*(massFloat)
     print("If \(mass ?? "00") kg of mass was converted to energy , it would produce \(energy) J")
-}   
-catch {
+}catch {
     print("ERROR NUMBBER NOT VALID TRY AGAIN")
     print("\nDone")
 }
