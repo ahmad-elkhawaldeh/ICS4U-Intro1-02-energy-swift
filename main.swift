@@ -13,7 +13,7 @@ import Foundation
 
 // https://stackoverflow.com/questions/60788627/custom-errormessage-on-enum-field-upon-failed-validation-in-spring
 enum CustomError: Error {
-    case InputNil
+    case inputNil
  }
 
 let speed: Float = 20
@@ -29,13 +29,13 @@ do {
     let mass = readLine()
     guard let massFloat = Float(mass!)
     else {
-        throw CustomError.InputNil
+        throw CustomError.inputNil
     }
     let lightSpeed = (POW4 * pow(POW2, POW3))
     let energy = pow(lightSpeed, POW1)*(massFloat)
     print("If \(mass ?? "00") kg of mass was converted to energy , it would produce \(energy) J")
 }
-catch {
-    print("ERROR NUMBBER NOT VALID TRY AGAIN")
-    print("\nDone")
+    catch {
+        print("ERROR NUMBBER NOT VALID TRY AGAIN")
+        print("\nDone")
 }
